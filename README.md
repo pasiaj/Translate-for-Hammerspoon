@@ -5,10 +5,6 @@ The magic of Google Cloud Translation while you're typing. Anywhere.
 <!-- ![](http://i.imgur.com/kYoE7hs.gif)
  -->
 
-### Credits
-
-This work is almost fully based on the [Anycomplete codebase](https://github.com/nathancahill/Anycomplete) by [Nathan Cahill](https://nathancahill.com/).
-
 ### Installation
 
 gTranslate is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed (see [install Hammerspoon](#install-hammerspoon) below) you can run the following script to install Autocomplete.
@@ -52,3 +48,8 @@ The source and target languages and the hotkey can be changed by passing in argu
 such as:
 
     gtranslate.init("YOUR_APIKEY", "fi", "en", {"cmd", "ctrl"}, 'L')
+
+
+### Credits
+
+This work is almost fully based on the [Anycomplete codebase](https://github.com/nathancahill/Anycomplete) by [Nathan Cahill](https://nathancahill.com/).
