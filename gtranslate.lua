@@ -97,7 +97,7 @@ end
 function mod.init( APIKEY, source, target, mods, key )
     mod.APIKEY = APIKEY
     mod.source = source or "fi"
-    mod.target = targer or "en"
+    mod.target = target or "en"
 
     mods = mods or {"cmd", "alt", "ctrl"}
     key = key or "T"
