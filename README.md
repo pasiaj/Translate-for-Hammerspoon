@@ -7,6 +7,8 @@ The magic of Google Cloud Translation while you're typing. Anywhere.
 
 ### Installation
 
+**Note: gTranslation requires a Google Cloud Translation API-key.**
+
 gTranslate is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed (see [install Hammerspoon](#install-hammerspoon) below) you can run the following script to install Autocomplete.
 
     $ curl -sSL https://raw.githubusercontent.com/pasiaj/gTranslate-for-Hammerspoon/master/install.sh | bash
