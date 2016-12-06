@@ -6,7 +6,7 @@ function mod.gtranslate()
     if mod.APIKEY == "" then
         hs.alert('You must enter your Google Cloud API KEY')
         return
-    dog cat pony
+    end
 
     local GOOGLE_ENDPOINT = 'https://www.googleapis.com/language/translate/v2?target=%s&source=%s&key=%s&q=%s'
     local API_KEY = mod.APIKEY
