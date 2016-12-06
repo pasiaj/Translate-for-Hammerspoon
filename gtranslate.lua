@@ -2,7 +2,7 @@ local mod = {}
 
 -- gtranslate
 function mod.gtranslate()
-    local API_KEY = "AIzaSyCuDQKqJcdE2ZQQqEX2zay3FPlWQ5qB1rc"
+    local API_KEY = "ADD_YOUR_KEY"
     local GOOGLE_ENDPOINT = 'https://www.googleapis.com/language/translate/v2?target=%s&source=%s&key=%s&q=%s'
     local target = "en"
     local source = "fi"
