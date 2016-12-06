@@ -1,4 +1,4 @@
-## gTranslate for Hammerspoon
+## Translate for Hammerspoon
 
 The magic of Google Cloud Translation while you're typing. Anywhere.
 
