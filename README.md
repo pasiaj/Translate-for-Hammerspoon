@@ -9,15 +9,15 @@ The magic of Google Cloud Translation while you're typing. Anywhere.
 
 **Note: gTranslation requires a Google Cloud Translation API-key.**
 
-gTranslate is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed (see [install Hammerspoon](#install-hammerspoon) below) you can run the following script to install Autocomplete.
+Translate is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed (see [install Hammerspoon](#install-hammerspoon) below) you can run the following script to install Autocomplete.
 
-    $ curl -sSL https://raw.githubusercontent.com/pasiaj/gTranslate-for-Hammerspoon/master/install.sh | bash
+    $ curl -sSL https://raw.githubusercontent.com/pasiaj/Translate-for-Hammerspoon/master/install.sh | bash
 
-[install.sh](https://raw.githubusercontent.com/pasiaj/gTranslate-for-Hammerspoon/master/install.sh) just clones this repository into `~/.hammerspoon`, loads it into Hammerspoon and sets `⌃⌥⌘T` as the default keybinding.
+[install.sh](https://raw.githubusercontent.com/pasiaj/Translate-for-Hammerspoon/master/install.sh) just clones this repository into `~/.hammerspoon`, loads it into Hammerspoon and sets `⌃⌥⌘T` as the default keybinding.
 
 #### Manual installation
 
-    $ git clone https://github.com/pasiaj/gTranslate-for-Hammerspoon ~/.hammerspoon/gtranslate
+    $ git clone https://github.com/pasiaj/Translate-for-Hammerspoon ~/.hammerspoon/gtranslate
 
 To initialize, add to `~/.hammerspoon/init.lua` (creating it if it does not exist):
 
