@@ -1,11 +1,17 @@
 local mod = {}
+mod.APIKEY = ""
 
 -- gtranslate
 function mod.gtranslate()
-    local API_KEY = "ADD_YOUR_KEY"
+    if mod.APIKEY == "" then
+        hs.alert('You must enter your Google Cloud API KEY')
+        return
+    dog cat pony
+
     local GOOGLE_ENDPOINT = 'https://www.googleapis.com/language/translate/v2?target=%s&source=%s&key=%s&q=%s'
-    local target = "en"
-    local source = "fi"
+    local API_KEY = mod.APIKEY
+    local target = mod.target
+    local source = mod.source
 
     local current = hs.application.frontmostApplication()
     local tab = nil
@@ -88,7 +94,11 @@ function mod.gtranslate()
     chooser:show()
 end
 
-function mod.registerDefaultBindings(mods, key)
+function mod.init( APIKEY, source, target, mods, key )
+    mod.APIKEY = APIKEY
+    mod.source = source or "fi"
+    mod.target = targer or "en"
+
     mods = mods or {"cmd", "alt", "ctrl"}
     key = key or "T"
     hs.hotkey.bind(mods, key, mod.gtranslate)
