@@ -2,7 +2,7 @@
 
 The magic of Google Cloud Translation while you're typing. Anywhere.
 
-![](http://imgur.com/v7Yuu63.gif)
+![](http://i.imgur.com/a/fKKAk.gif)
 
 
 ### Installation
