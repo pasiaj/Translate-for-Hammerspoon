@@ -7,7 +7,7 @@ The magic of Google Cloud Translation while you're typing. Anywhere.
 
 ### Credits
 
-This work is almost fully based on the (Anycomplete codebase)[https://github.com/nathancahill/Anycomplete] by (Nathan Cahill)[https://nathancahill.com/].
+This work is almost fully based on the [Anycomplete codebase](https://github.com/nathancahill/Anycomplete) by [Nathan Cahill](https://nathancahill.com/).
 
 ### Installation
 
