@@ -13,8 +13,6 @@ gTranslate is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hamm
 
 [install.sh](https://raw.githubusercontent.com/pasiaj/gTranslate-for-Hammerspoon/master/install.sh) just clones this repository into `~/.hammerspoon`, loads it into Hammerspoon and sets `⌃⌥⌘T` as the default keybinding.
 
-You must manually enter your Google Cloud Translation API KEY to the ~/.hammerspoon/gtranslate/gtranslate.lua-file.
-
 #### Manual installation
 
     $ git clone https://github.com/pasiaj/gTranslate-for-Hammerspoon ~/.hammerspoon/gtranslate
