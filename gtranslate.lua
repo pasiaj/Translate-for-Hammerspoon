@@ -13,14 +13,18 @@ function mod.gtranslate()
     local target = mod.target
     local source = mod.source
 
+    local alerts = {}
+
     local current = hs.application.frontmostApplication()
     local tab = nil
     local copy = nil
+    local t = nil
     local choices = {}
 
     local chooser = hs.chooser.new(function(choosen)
         if copy then copy:delete() end
         if tab then tab:delete() end
+        if t then t:delete() end
         current:activate()
         hs.eventtap.keyStrokes(choosen.text)
     end)
@@ -28,6 +32,19 @@ function mod.gtranslate()
     -- Removes all items in list
     function reset()
         chooser:choices({})
+    end
+
+    function setLang(so, ta)
+        source = so
+        target = ta
+
+        local style = {}
+
+        hs.alert.closeSpecific( alerts["langPrimary"], 0 )
+        hs.alert.closeSpecific( alerts["langSecondary"], 0 )
+
+        alerts["langPrimary"] = hs.alert.show( string.format('%s ⇢ %s', string.upper(source), string.upper(target)), { ["textSize"] = 50 }, 2 )
+        alerts["langSecondary"] = hs.alert.show( '⌘T to switch.', 2 )
     end
 
     tab = hs.hotkey.bind('', 'tab', function()
@@ -38,6 +55,11 @@ function mod.gtranslate()
         chooser:query(item.subText)
         reset()
         updateChooser()
+    end)
+
+    t = hs.hotkey.bind('cmd', 't', function()
+        setLang(target, source)
+        reset()
     end)
 
     copy = hs.hotkey.bind('cmd', 'c', function()
@@ -92,6 +114,8 @@ function mod.gtranslate()
     chooser:searchSubText(false)
 
     chooser:show()
+    setLang(source, target)
+
 end
 
 function mod.init( APIKEY, source, target, mods, key )
